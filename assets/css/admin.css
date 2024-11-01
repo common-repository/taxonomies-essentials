@@ -1,0 +1,209 @@
+/**
+ * Admin CSS
+ */
+
+.tx_valid_main{
+    background: #fff;
+    padding: 20px 20px;
+    margin-top: 20px;
+}
+.tx_valid_main .form-table td p{
+    margin-bottom: 12px;
+}
+@media screen and (min-width: 767px) {
+    .tx_valid_main{
+        padding: 20px 50px;
+    }
+}
+.tx-valid-essentials-accordian ul.children {
+    padding-left: 16px;
+    margin: 6px;
+}
+.tx_valid_main table.form-table th {
+    display: none;
+}
+.tx_valid_main table.form-table td {
+    padding: 0;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 14px;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor > *{
+    flex: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor .dashicons{
+    padding-bottom: 10px;
+}
+.tx_valid_main ul.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+.tx_valid_main .ui-accordion .ui-accordion-content {
+    max-height: 400px;
+}
+.tx_valid_main .ui-widget-header{
+    background: transparent;
+}
+.tx_valid_main .ui-tabs .ui-tabs-panel{
+    border: 1px solid #dde1e0;
+    background: #e7ebea;
+    border-radius: 0;
+}
+.tx_valid_main .ui-tabs{
+    padding: 0;
+    background: transparent;
+}
+.tx_valid_main .ui-tabs .ui-tabs-nav{
+    padding: 0;
+}
+.tx_valid_main .ui-widget.ui-widget-content{
+    border: none;
+}
+.tx_valid_main .ui-widget-header{
+    border: none;
+}
+.tx_valid_main .ui-state-default, .ui-widget-content .ui-state-default,
+.tx_valid_main .ui-widget-header .ui-state-default{
+    border-radius: 0;
+    background: #dde1e0;
+    margin: 0;
+    border: none;
+    border-top: 5px solid #dde1e0;
+    text-transform: capitalize;
+}
+.tx_valid_main .ui-tabs .ui-tabs-nav li.ui-tabs-active{
+    background: #e7ebea;
+    color: #2ac186;
+    border-top: 5px solid #2ac186;
+}
+.tx_valid_main .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor{
+    cursor: pointer;
+}
+.tx_valid_main .ui-state-active a,
+.tx_valid_main .ui-state-active a:link,
+.tx_valid_main .ui-state-active a:visited{
+    color: #2ac186;
+}
+@media screen and (max-width: 550px) {
+    .tx_valid_main .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+        padding: 10px !important;
+    }
+    .tx_valid_main .ui-tabs .ui-tabs-nav li{
+        min-height: 105px;
+        max-width: 33%;
+    }
+}
+.tx_valid_main .ui-tabs .ui-tabs-nav li{
+    border-right: 1px solid #d7d7d7;
+}
+.tx_valid_main .ui-tabs .ui-tabs-nav li:last-child{
+    border-right: none;
+}
+.tx_valid_main .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+    padding: 1em;
+}
+.tx_valid_main .wp-person a:focus .gravatar, 
+.tx_valid_main a:focus, .tx_valid_main a:focus .media-icon img, 
+.tx_valid_main a:focus .plugin-icon{
+    box-shadow: none;
+}
+.tx_valid_main .ui-state-active, 
+.tx_valid_main .ui-widget-content h3.ui-state-active{
+    border: 1px solid #2ac186;
+    background: #2ac186;
+}
+.tx_valid_main .ui-accordion-content h3{
+    text-transform: capitalize;
+    color: #454545;
+}
+.tx_valid_main .inner_title{
+    text-transform: capitalize;
+}
+.tx_valid_main .taxonomy_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tx_valid_main .taxonomy_list li{
+    flex: 100%;
+}
+.tx_valid_main .ui-accordion-header.ui-state-default,
+.tx_valid_main .ui-widget-content .ui-accordion-header.ui-state-default{
+    font-weight: bold;
+    padding: 15px;
+}
+.tx_valid_main .ui-accordion-header.ui-state-default .ui-accordion-header-icon,
+.tx_valid_main .ui-widget-content .ui-accordion-header.ui-state-default .ui-accordion-header-icon{
+    float: right;
+    margin-top: 0;
+}
+
+.tx_valid_main input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: var(--form-background);
+    /* Not removed via appearance */
+    margin: 0;
+    margin-right: 5px;  
+    font: inherit;
+    color: currentColor;
+    width: 1.3em;
+    height: 1.3em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    place-content: center;
+}
+.tx_valid_main input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+}
+.tx_valid_main input[type="checkbox"]:checked::before {
+    transform: scale(1);
+    height: 0.75rem;
+    width: 0.75rem;
+    margin: 1px;
+}
+.tx_valid_main input[type="checkbox"]:disabled {
+    --form-control-color: var(--form-control-disabled);
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+}
+.wp-core-ui .tx_valid_main .button-primary{
+    background: #2ac186;
+    border-color: #2ac186;
+    border-radius: 0;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.wp-core-ui .tx_valid_main .button-primary:hover{
+    background: #fff;
+    color: #2ac186;
+}
+.tx_valid_main ol li{
+    margin-bottom: 14px;
+}
+.tx_valid_main .wrap{
+    margin-right: 0;
+}
+#general-options input{
+    padding: 8px 15px;
+    margin-top: 12px;
+}
